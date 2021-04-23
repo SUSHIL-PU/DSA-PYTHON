@@ -3,4 +3,4 @@
 
 
 ## RECURSION
-          ###  fibonacci.py - To find fibonacci of an index
+    fibonacci.py - To find fibonacci of an index
