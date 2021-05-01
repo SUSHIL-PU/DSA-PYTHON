@@ -9,3 +9,4 @@
     towerOfHanoiProblem.py  -    There are 3 towers, have to place the disks from tower1 to tower2 using tower3
     targetSum.py    -   Find the set of elements whose sum is equal to the given target
     getStairPath.py     -   Get all the possible paths to reach down from the given stair
+    mazePath.py     -   Find the paths of a maze to visit from source to destination.
