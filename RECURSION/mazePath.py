@@ -16,9 +16,7 @@
 
 def printMazePath(maze, row, col, answerTillNow, visited):
     if row<0 or col<0 or row == len(maze) or col==len(maze[0]) or maze[row][col] == 1 or visited[row][col] == True:
-        return      # Simply returning if control goes out of the maze, i.e. if row or col
-         #  going beyond the maze or the node having obstackle(value is 1) or a node is
-         #  already visited 
+        return      # Simply returning if control goes out of the maze, i.e. if row or col going beyond the maze or the node having obstackle(value is 1) or a node is already visited 
     elif row == len(maze)-1 and col == len(maze[0])-1:
         print(answerTillNow)
         return
@@ -51,3 +49,19 @@ for r in range(row):
 # 0,0 is  the source and destination is maze[row-1][col-1]
 # initially visited is False
 printMazePath(maze, 0, 0, "", visited)
+
+
+#               OUTPUT
+# Input :
+#       Enter the number of row :4
+#       Enter the number of column : 3
+#       Enter the elements
+#       0 0 1
+#       0 0 0
+#       1 0 0
+#       1 1 0
+# Output :
+#       drdrd
+#       drrdd
+#       rddrd
+#       rdrdd
