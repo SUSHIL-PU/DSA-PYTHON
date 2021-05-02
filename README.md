@@ -10,3 +10,4 @@
     targetSum.py    -   Find the set of elements whose sum is equal to the given target
     getStairPath.py     -   Get all the possible paths to reach down from the given stair
     mazePath.py     -   Find the paths of a maze to visit from source to destination.
+    printPermutation.py     -   To print all the possible permutation of an string
