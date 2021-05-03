@@ -5,7 +5,7 @@
 # Input : 6
 # Output: 8
 # 
-# ------------------------------------------------
+# ---------------------------------------------------------------------
 
 
 def fibo(n, dp):
@@ -23,10 +23,11 @@ def fibo(n, dp):
 n = int(input("enter a number : "))
 
 dp = [0 for i in range(n+1)]    # Filling the dp list with all 0's
-print("fibonacci is  = ", fibo(n, dp))
+print("fibonacci is  = ", fibo(n, dp)) # passing the parameter n and dp, in the dp list fibonacci numbers will be added till index n.
 print("dp list = " ,dp)
 
 
+# ---------------------------------------------------------------------
 #                       OUTPUT
 # Test case 1 :
 #         Input : 
