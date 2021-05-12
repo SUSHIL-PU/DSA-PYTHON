@@ -4,6 +4,7 @@
 
 ## SORTING 
     mergeSort.py    -   Implementation of mergeSort
+    quickSort.py    -   Implementation of quickSort
 
 ## RECURSION & BACKTRACKING
     fibonacci.py    -    To find fibonacci of an index
@@ -13,10 +14,10 @@
     targetSum.py    -   Find the set of elements whose sum is equal to the given target
     getStairPath.py     -   Get all the possible paths to reach down from the given stair
     mazePath.py     -   Find the paths of a maze to visit from source to destination.
-    printPermutation.py     -   To print all the possible permutation of an string
+    printPermutation.py     -   To print all the possible permutations of an string
 
 
 
 
 ## DYNAMIC PROGRAMMING
-    fibonacciDynamic.py     -   Find fibonacci of an index using dynamic approach
+    fibonacciDynamic.py     -   Find the fibonacci number of a particular index using dynamic approach
