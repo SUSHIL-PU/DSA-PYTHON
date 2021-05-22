@@ -15,7 +15,7 @@
     getStairPath.py     -   Get all the possible paths to reach down from the given stair
     mazePath.py     -   Find the paths of a maze to visit from source to destination.
     printPermutation.py     -   To print all the possible permutations of an string
-
+    josephusProblem.py  -   To find the position of lucky soldier among N soldiers where k'th soldier will be exeuted circularry until one left.
 
 
 
