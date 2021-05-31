@@ -17,3 +17,13 @@ def bubblesort(arr):
 print("Enter elements ")
 arr = list(map(int, input().split()))
 bubblesort(arr)
+
+
+
+# ----------------------------------------------------------------------------------------
+#               OUTPUT
+# Input :
+#       Enter elements
+#       7 8 2 1 0 1 3 2
+# Output :
+#       [0, 1, 1, 2, 2, 3, 7, 8]
