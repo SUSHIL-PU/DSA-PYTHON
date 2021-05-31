@@ -5,6 +5,7 @@
 ## SORTING 
     mergeSort.py    -   Implementation of mergeSort
     quickSort.py    -   Implementation of quickSort
+    insertionSort.py  - Implementation of insertionSort
 
 ## RECURSION & BACKTRACKING
     fibonacci.py    -    To find fibonacci of an index
