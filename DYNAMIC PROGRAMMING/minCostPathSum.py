@@ -1,6 +1,6 @@
 #  minimum path sum / Minimum cost path
-# In a 2d matrix path, have to visit from (0,0) to (row-1, col-1) by minimum cost
-
+# In a 2d matrix path, have to visit from (0,0) to (row-1, col-1) by minimum cost 
+#  you can only visit right side or bottom side
 
 #             MEMOIZATION/DYNAMIC APPROACH
 #        TIME COMPLEXITY : O(N * M)     -> N = no of row,   M = no of col
@@ -22,25 +22,30 @@ def minCostSum(matrix, row, col, dp):
     return dp[row][col]
 
 
+# ----------------------------------------------------------------------------------------------
+#               TABULATION APPROACH
+#            TIME COMPLEXITY : O(N * M)
+# 
+# def minCostSum(matrix, dp):
+#     row = len(matrix)-1
+#     col = len(matrix[0])-1
+#     dp[row][col] = matrix[row][col]
 
-row = int(input("Enter the number of row : "))
-col = int(input("Enter the number of col : "))
-matrix = list()
-print("Enter elements ")
-for i in range(row):
-    elm = list(map(int, input().split()))
-    matrix.append(elm)
+#     for i in range(col-1, -1, -1):
+#         dp[row][i] = dp[row][i+1] + matrix[row][i]
 
-#  for memoization
-dp = []
-for i in range(row):
-    elm = [0 for i in range(col)]
-    dp.append(elm)
+#     for i in range(row-1, -1, -1):
+#         dp[i][col] = dp[i+1][col] + matrix[i][col]
+    
+#     for i in range(row-1, -1, -1):
+#         for j in range(col-1, -1, -1):
+#             if dp[i][j] == 0:
+#                 dp[i][j] = matrix[i][j] + min(dp[i+1][j],  dp[i][j+1])
 
-minCost = minCostSum(matrix, 0, 0, dp) # 0, 0 is the source 
-print("Minimum cost =", minCost)
+#     print(dp)
+#     return dp[0][0]
 
-
+    
 
 
 
@@ -59,11 +64,29 @@ print("Minimum cost =", minCost)
 #     minCost = matrix[row][col] + min(minCostSum(matrix, row, col+1), minCostSum(matrix, row+1, col))
 #     return minCost
 
-
-
-
-
 # ---------------------------------------------------------------------------------------------
+
+row = int(input("Enter the number of row : "))
+col = int(input("Enter the number of col : "))
+matrix = list()
+print("Enter elements ")
+for i in range(row):
+    elm = list(map(int, input().split()))
+    matrix.append(elm)
+
+#  for memoization
+dp = []
+for i in range(row):
+    elm = [0 for i in range(col)]
+    dp.append(elm)
+print(dp)
+
+minCost = minCostSum(matrix, 0, 0, dp)    # 0, 0 is the source 
+# minCost = minCostSum(matrix, dp)  # for tabulation 
+print("Minimum cost =", minCost)
+
+
+#  ---------------------------------------------------------------------------------------------
 #       
 # 
 #         OUTPUT
