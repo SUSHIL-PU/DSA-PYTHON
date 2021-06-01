@@ -1,6 +1,8 @@
 # DSA-PYTHON
 ## A daily practicing repository for DSA with python.
 
+## SEARCHING
+    KMP_algorithm.py -  KMP algorithm for pattern search
 
 ## SORTING 
     mergeSort.py    -   Implementation of mergeSort
