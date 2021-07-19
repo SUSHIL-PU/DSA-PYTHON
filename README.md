@@ -28,3 +28,4 @@
     fibonacciDynamic.py     -   Find the fibonacci number of a particular index using dynamic approach
     stairPathCount.py   -   To count the number of stair path by 1step or 2step or 3step at a time to climp a stair.
     minCostpathSum.py   -   To find the minimum cost path
+    01knapsack.py   -   0 1 knapsack
